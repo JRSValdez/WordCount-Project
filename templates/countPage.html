@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count Result</title>
+</head>
+<body>
+
+    <h1>Count Result!</h1>
+
+    <h2>There are {{ numWords }} words in your text.</h2>
+    <h2>Your Text</h2>
+    <p>{{ fulltext }}</p>
+
+    <h2>Total Words</h2>
+    {% for word, total in wordDic %}
+    <h3>{{word}} --- {{total}} </h3>
+    {% endfor %}
+    
+</body>
+</html>
